@@ -1,0 +1,36 @@
+2026-05-20 10:28:00 | DEBUG    | root                 | This is a DEBUG message — file only
+2026-05-20 10:28:00 | INFO     | root                 | This is an INFO message — file + console
+2026-05-20 10:28:00 | WARNING  | root                 | This is a WARNING — file + console
+2026-05-20 10:28:00 | ERROR    | root                 | This is an ERROR — file + console
+2026-05-20 10:28:31 | INFO     | bot.client           | BinanceClient initialised
+2026-05-20 10:28:31 | INFO     | bot.orders           | ORDER REQUEST | BTCUSDT | BUY | MARKET | qty=0.01
+2026-05-20 10:28:31 | DEBUG    | urllib3.connectionpool | Starting new HTTP connection (1): localhost:8000
+2026-05-20 10:28:31 | INFO     | werkzeug             | 127.0.0.1 - - [20/May/2026 10:28:31] "POST /fapi/v1/order HTTP/1.1" 200 -
+2026-05-20 10:28:31 | DEBUG    | urllib3.connectionpool | http://localhost:8000 "POST /fapi/v1/order HTTP/1.1" 200 165
+2026-05-20 10:28:31 | INFO     | bot.orders           | ORDER RESPONSE | orderId=940216 | status=FILLED | executedQty=0.01 | avgPrice=67432.10
+2026-05-20 10:28:43 | INFO     | bot.orders           | ORDER REQUEST | BTCUSDT | SELL | LIMIT | qty=0.01 | price=70000.0
+2026-05-20 10:28:43 | DEBUG    | urllib3.connectionpool | Resetting dropped connection: localhost
+2026-05-20 10:28:43 | INFO     | werkzeug             | 127.0.0.1 - - [20/May/2026 10:28:43] "POST /fapi/v1/order HTTP/1.1" 200 -
+2026-05-20 10:28:43 | DEBUG    | urllib3.connectionpool | http://localhost:8000 "POST /fapi/v1/order HTTP/1.1" 200 165
+2026-05-20 10:28:43 | INFO     | bot.orders           | ORDER RESPONSE | orderId=921091 | status=FILLED | executedQty=0.01 | avgPrice=67432.10
+2026-05-20 10:30:31 | INFO     | __main__             | CLI called | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None
+2026-05-20 10:30:31 | INFO     | bot.client           | BinanceClient initialised
+2026-05-20 10:30:31 | INFO     | bot.orders           | ORDER REQUEST | BTCUSDT | BUY | MARKET | qty=0.01
+2026-05-20 10:30:31 | DEBUG    | urllib3.connectionpool | Starting new HTTP connection (1): localhost:8000
+2026-05-20 10:30:31 | INFO     | werkzeug             | 127.0.0.1 - - [20/May/2026 10:30:31] "POST /fapi/v1/order HTTP/1.1" 200 -
+2026-05-20 10:30:31 | DEBUG    | urllib3.connectionpool | http://localhost:8000 "POST /fapi/v1/order HTTP/1.1" 200 165
+2026-05-20 10:30:31 | INFO     | bot.orders           | ORDER RESPONSE | orderId=238033 | status=FILLED | executedQty=0.01 | avgPrice=67432.10
+2026-05-20 10:30:31 | INFO     | __main__             | Order placed successfully
+2026-05-20 10:30:47 | INFO     | __main__             | CLI called | symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=70000.0
+2026-05-20 10:30:47 | INFO     | bot.client           | BinanceClient initialised
+2026-05-20 10:30:47 | INFO     | bot.orders           | ORDER REQUEST | BTCUSDT | SELL | LIMIT | qty=0.01 | price=70000.0
+2026-05-20 10:30:47 | DEBUG    | urllib3.connectionpool | Starting new HTTP connection (1): localhost:8000
+2026-05-20 10:30:47 | INFO     | werkzeug             | 127.0.0.1 - - [20/May/2026 10:30:47] "POST /fapi/v1/order HTTP/1.1" 200 -
+2026-05-20 10:30:47 | DEBUG    | urllib3.connectionpool | http://localhost:8000 "POST /fapi/v1/order HTTP/1.1" 200 165
+2026-05-20 10:30:47 | INFO     | bot.orders           | ORDER RESPONSE | orderId=733613 | status=FILLED | executedQty=0.01 | avgPrice=67432.10
+2026-05-20 10:30:47 | INFO     | __main__             | Order placed successfully
+2026-05-20 10:30:59 | INFO     | __main__             | CLI called | symbol=BTCUSDT side=BUY type=LIMIT qty=0.01 price=None
+2026-05-20 10:30:59 | INFO     | __main__             | CLI called | symbol=BTCUSDT side=BUY type=MARKET qty=-1.0 price=None
+2026-05-20 10:30:59 | INFO     | bot.client           | BinanceClient initialised
+2026-05-20 10:30:59 | WARNING  | bot.orders           | Validation failed: Quantity must be a positive number, got '-1.0'
+2026-05-20 10:30:59 | WARNING  | __main__             | Invalid input: Quantity must be a positive number, got '-1.0'
